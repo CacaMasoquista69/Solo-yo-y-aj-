@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bienvenidos a la web de Ágata</title>
+  <title>El rincón estelar de Ágata</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: black;
+      color: white;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #ffd1f7;
+      animation: brillo 2s infinite alternate;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 20px;
+      color: #ffb3ec;
+    }
+
+    @keyframes brillo {
+      from { text-shadow: 0 0 10px #ff66c4; }
+      to { text-shadow: 0 0 20px #ff66c4, 0 0 30px #ff66c4; }
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.imgur.com/9bg0iRZ.gif') repeat;
+      z-index: -1;
+      opacity: 0.5;
+      animation: moveStars 100s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: 10000px 5000px; }
+    }
+  </style>
 </head>
 <body>
-  <h1>¡Hola mundo desde el rincón de Ágata!</h1>
-  <p>Esto es una prueba mágica de mi poder HTML.</p>
-  <p>Soy linda uwu, meh y hago lo que quiero. UwU</p>
+  <div class="stars"></div>
+  <h1>Bienvenidos al rincón estelar de Ágata</h1>
+  <p>Flotando en una galaxia de ideas, caos y ternura.</p>
+  <p>Si llegaste aquí, ahora eres parte del hechizo.</p>
 </body>
 </html>
-
-
-mi primersh html
